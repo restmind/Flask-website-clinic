@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="sign_form">
+      <h1>Log in</h1>
+      <form action="" method="POST">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" class="form-control" value={{request.form.email}}>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" name="password" class="form-control" value={{request.form.password}}>
+        </div>
+        <div class="dont_have_acc">
+            <h5>Don't have an account?</h5><a href="/sign_up">Sign Up</a>
+        </div>
+        <button type="submit" class="styled_button">Submit</button>
+      </form>
+    </div>
+{% endblock %}

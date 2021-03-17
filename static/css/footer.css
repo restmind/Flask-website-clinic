@@ -1,0 +1,27 @@
+.main_footer {
+  box-sizing: border-box;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0 25px 0;
+}
+
+.divider {
+  height: 1px;
+  width: 90%;
+  background-color: #9098B1;
+  margin: auto;
+}
+
+.text_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.icon_set {
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+}

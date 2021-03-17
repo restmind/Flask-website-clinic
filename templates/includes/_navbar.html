@@ -1,0 +1,29 @@
+<header>
+    <nav>
+        <ul>
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+            {% if session.logged_in == NULL %}
+            <li>
+                <form action="{{url_for('sign_in')}}">
+                    <input type="submit" class="styled_button" value="Sign in" />
+                </form>
+            </li>
+            <li>
+                <form action="{{url_for('sign_in')}}">
+                    <input type="submit" class="styled_button_reverse" value="Make an appointment" />
+                </form>
+            </li>
+            {% else %}
+            <li>
+                <form action="{{url_for('logout')}}">
+                    <input type="submit" class="styled_button_reverse" value="Log out" />
+                </form>
+            </li>
+            <li><button class="styled_button">Make an appointment</button></li>
+            {% endif %}
+
+        </ul>
+    </nav>
+</header>

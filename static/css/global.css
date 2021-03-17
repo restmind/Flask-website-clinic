@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #505f98;
+}
+button {
+  border: 0;
+}
+li {
+  display: block;
+}
+h2 {
+  color: rgb(34, 50, 99);
+  font-size: 14px;
+}
+h4 {
+    color: rgb(144, 152, 177);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+h5 {
+  color: #9098B1;
+  font-size: 12px;
+}
+input {
+    height: 40px;
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+button {
+  height: 42px;
+  border-radius: 5px;
+  padding: 0 25px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #FE862C;
+}
+input[type=submit] {
+  height: 42px;
+  border-radius: 5px;
+  padding: 0 25px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #FE862C;
+}
+.styled_button {
+  background: #FE862C;
+  color: #FFF;
+}
+
+.styled_button:hover {
+  transition: all 0.3s ease-out;
+  background-color: #fff;
+  color: #FE862C;
+}
+.styled_button_reverse {
+    background: #FFF;
+    color: #FE862C;
+}
+.styled_button_reverse:hover {
+  transition: all 0.3s ease-out;
+  background-color: #FE862C;
+  color: #fff;
+}

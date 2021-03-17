@@ -1,0 +1,12 @@
+@import "./reset.min.css";
+@import "./normalize.min.css";
+
+@import "./global.css";
+
+@import "./header.css";
+@import "./main.css";
+@import "./footer.css";
+
+@import "./form.css";
+
+@import "./account.css";

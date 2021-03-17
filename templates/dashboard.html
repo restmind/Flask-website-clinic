@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="account_wrapper">
+        <img class="user_image" src="{{url_for('static', filename='/images/user.svg')}}" alt="user image">
+        <div class="user_name">
+            <h1>{{ user.first_name }} {{ user.last_name }}</h1>
+        </div>
+        <ul class="user_detail_container">
+            <li class="user_detail_item">
+                <div>
+                    <h2>Gender</h2>
+                </div>
+                <h4>{{ user.sex }}</h4>
+            </li>
+            <li class="user_detail_item">
+                <div>
+                    <h2>Birthday</h2>
+                </div>
+                <h4>{{ user.birth_date }}</h4>
+            </li>
+            <li class="user_detail_item">
+                <div>
+                    <h2>Email</h2>
+                </div>
+                <h4>{{ user.email }}</h4>
+            </li>
+            <li class="user_detail_item">
+                <div>
+                    <h2>Phone</h2>
+                </div>
+                <h4>{{ user.phone_number }}</h4>
+            </li>
+            <li class="user_detail_item">
+                <div>
+                    <h2>Blood</h2>
+                </div>
+                <h4>{{ user.blood_type }} {{ user.rhesus_factor }}</h4>
+            </li>
+            <li class="user_detail_item">
+                <div>
+                    <h2>Chronic diseases</h2>
+                </div>
+                <h4>{{ user.chronic_diseases }}</h4>
+            </li>
+            <li class="user_detail_item">
+                <div>
+                    <h2>Drug allergy</h2>
+                </div>
+                <h4>{{ user.drug_allergy }}</h4>
+            </li>
+        </ul>
+    </div>
+    <div style = "width: 60vw;"></div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <main></main>
+    <footer>
+        <div class="divider"></div>
+        <div class="main_footer">
+            <div class="text_column">
+                <h5>Social Media</h5>
+                <div class="icon_set">
+                    <img src="{{url_for('static', filename='/images/icon-instagram.svg')}}" alt="instagram icon">
+                    <img src="{{url_for('static', filename='/images/icon-facebook.svg')}}" alt="facebook icon">
+                    <img src="{{url_for('static', filename='/images/icon-telegram.svg')}}" alt="telegram icon">
+                </div>
+            </div>
+            <div class="text_column">
+                <h5>Lorem ipsum dolor</h5>
+                <h5>Lorem ipsum dolor</h5>
+            </div>
+            <div class="text_column">
+                <h5>FAQ</h5>
+                <h5>Privacy policy</h5>
+            </div>
+        </div>
+    </footer>
+{% endblock %}

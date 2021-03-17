@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    height: 70px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+ display: flex;
+ justify-content: space-between;
+ align-items: baseline;
+}
+
+
+li a:hover {
+    transition: all 0.3s ease-out;
+    color: #FE862C;
+}
+
+nav ul li {
+  margin-right: 60px;
+}
+
+nav ul li:first-child{
+  margin-left:60px;
+}
